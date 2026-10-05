@@ -212,5 +212,4 @@ The telemetry, attacker infrastructure, domain, IP addresses, and attack
 scenario are simulated and should not be interpreted as evidence of a
 real-world compromise.
 
-````
 

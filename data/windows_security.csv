@@ -1,0 +1,4 @@
+timestamp,host,event_id,username,source_ip,logon_type,description
+2026-10-05 10:01:12,WIN-CLIENT01,4624,ahmed,192.168.10.25,2,Interactive logon
+2026-10-05 10:03:11,WIN-CLIENT01,4625,ahmed,192.168.10.50,3,Failed network logon
+2026-10-05 10:03:12,WIN-CLIENT01,4624,ahmed,192.168.10.50,3,Successful network logon

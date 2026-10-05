@@ -1,0 +1,9 @@
+type,value,description,source
+IP,203.0.113.50,"Simulated external infrastructure / potential C2 destination",network.csv
+Domain,update-check.example,"Simulated suspicious DNS domain",dns.csv
+IP,192.168.10.50,"Source of suspicious authentication activity",windows_security.csv
+Hostname,WIN-CLIENT01,"Affected workstation",multiple telemetry sources
+Username,ahmed,"Account involved in suspicious authentication",windows_security.csv
+Process,credential_tool.exe,"Process associated with potential credential access",sysmon.csv
+Process,powershell.exe,"PowerShell executed from WINWORD.EXE",sysmon.csv
+File,malicious_document.docm,"Document involved in initial execution",sysmon.csv

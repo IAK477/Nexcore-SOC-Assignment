@@ -1,0 +1,19 @@
+DeviceProcessEvents
+| where InitiatingProcessFileName in~ (
+    "WINWORD.EXE",
+    "EXCEL.EXE",
+    "POWERPNT.EXE"
+)
+| where FileName in~ (
+    "powershell.exe",
+    "pwsh.exe"
+)
+| project
+    Timestamp,
+    DeviceName,
+    AccountName,
+    InitiatingProcessFileName,
+    InitiatingProcessCommandLine,
+    FileName,
+    ProcessCommandLine
+| order by Timestamp desc

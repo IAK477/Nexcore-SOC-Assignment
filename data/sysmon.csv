@@ -1,0 +1,5 @@
+timestamp,event_id,host,process_id,parent_process_id,parent_image,image,command_line,source_image,target_image,granted_access,user
+2026-10-05 10:01:12,1,WIN-CLIENT01,4100,3900,explorer.exe,WINWORD.EXE,"""C:\Program Files\Microsoft Office\WINWORD.EXE"" malicious_document.docm",,,,CORP.LOCAL\ahmed
+2026-10-05 10:01:14,1,WIN-CLIENT01,4200,4100,WINWORD.EXE,powershell.exe,powershell.exe -NoProfile -EncodedCommand SQBuAHYAbwBrAGUALQBXAGUAYgBSAGUAcQB1AGUAcwB0AA==,,,,CORP.LOCAL\ahmed
+2026-10-05 10:02:05,10,WIN-CLIENT01,4300,4200,powershell.exe,credential_tool.exe,credential_tool.exe --access-lsass,C:\Users\ahmed\AppData\Local\Temp\credential_tool.exe,C:\Windows\System32\lsass.exe,0x1010,CORP.LOCAL\ahmed
+2026-10-05 10:04:20,3,WIN-CLIENT01,4200,4100,WINWORD.EXE,powershell.exe,powershell.exe -NoProfile -Command Invoke-WebRequest,,,,CORP.LOCAL\ahmed

@@ -1,0 +1,2 @@
+timestamp,host,source_ip,query,query_type,response
+2026-10-05 10:04:20,WIN-CLIENT01,192.168.10.25,update-check.example,A,203.0.113.50

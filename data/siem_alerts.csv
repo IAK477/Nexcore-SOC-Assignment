@@ -1,0 +1,5 @@
+timestamp,alert_id,severity,host,rule,description
+2026-10-05 10:01:14,ALERT-001,High,WIN-CLIENT01,Office Application Spawning PowerShell,WINWORD.EXE spawned PowerShell with an encoded command.
+2026-10-05 10:02:05,ALERT-002,High,WIN-CLIENT01,Potential Credential Access,Suspicious process attempted access to LSASS.
+2026-10-05 10:04:20,ALERT-003,Medium,WIN-CLIENT01,Suspicious DNS Request,Host queried suspicious domain update-check.example.
+2026-10-05 10:04:21,ALERT-004,High,WIN-CLIENT01,Potential C2 Communication,Repeated outbound connections to 203.0.113.50:443 detected.

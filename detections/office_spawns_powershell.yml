@@ -1,0 +1,34 @@
+title: Office Application Spawning PowerShell
+id: nexcore-001-office-powershell
+status: experimental
+description: Detects Microsoft Office applications spawning PowerShell.
+author: Ahmed Kazi
+date: 2026/10/05
+logsource:
+    category: process_creation
+    product: windows
+
+detection:
+    selection_parent:
+        ParentImage|endswith:
+            - '\WINWORD.EXE'
+            - '\EXCEL.EXE'
+            - '\POWERPNT.EXE'
+
+    selection_child:
+        Image|endswith:
+            - '\powershell.exe'
+            - '\pwsh.exe'
+
+    condition: selection_parent and selection_child
+
+falsepositives:
+    - Legitimate administrative or automation workflows
+    - Enterprise Office macros used for authorised automation
+    - Security testing activities
+
+level: high
+
+tags:
+    - attack.execution
+    - attack.t1059.001
